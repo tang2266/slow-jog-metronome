@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="超慢跑節拍器">
-  <rect width="512" height="512" rx="112" fill="#0e7a6d"/>
-  <circle cx="256" cy="256" r="178" fill="#f6f7f2"/>
-  <path d="M176 310c34 35 126 35 160 0" fill="none" stroke="#0e7a6d" stroke-width="28" stroke-linecap="round"/>
-  <path d="M202 202h108c30 0 54 24 54 54s-24 54-54 54H202z" fill="#d58b18"/>
-  <circle cx="310" cy="256" r="25" fill="#15201d"/>
-  <path d="M162 174l36-52m152 52l-36-52" stroke="#15201d" stroke-width="24" stroke-linecap="round"/>
-  <path d="M210 390h92" stroke="#15201d" stroke-width="26" stroke-linecap="round"/>
-</svg>
