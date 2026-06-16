@@ -1,4 +1,4 @@
-const CACHE_NAME = "slow-jog-metronome-v5";
+const CACHE_NAME = "slow-jog-metronome-v6";
 const ASSETS = [
   "./",
   "./index.html",
