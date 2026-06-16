@@ -20,7 +20,7 @@ const tempoFineUp = document.querySelector("#tempoFineUp");
 
 const MIN_TEMPO = 160;
 const MAX_TEMPO = 200;
-const MINUTES_MAX = 60;
+const MINUTES_MAX = 120;
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 let audioContext;
@@ -142,8 +142,9 @@ function playFinishChime() {
   const now = audioContext.currentTime;
 
   [0, 0.32, 0.64].forEach((offset) => {
-    tone(1320, now + offset, 0.18, 0.16, "sine");
-    tone(1980, now + offset, 0.12, 0.045, "triangle");
+    tone(2480, now + offset, 0.42, 0.22, "sine");
+    tone(3720, now + offset, 0.36, 0.11, "triangle");
+    tone(4960, now + offset, 0.28, 0.045, "sine");
   });
 }
 

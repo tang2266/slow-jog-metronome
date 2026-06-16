@@ -4,8 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0e7a6d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="超慢跑節拍器">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>超慢跑節拍器</title>
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -43,7 +48,7 @@
         <small id="timerStatus">尚未開始</small>
       </div>
       <label class="field-label" for="minutesRange">計時分鐘</label>
-      <input id="minutesRange" class="range" type="range" min="0" max="60" step="1" value="20" aria-label="設定計時分鐘">
+      <input id="minutesRange" class="range" type="range" min="0" max="120" step="1" value="20" aria-label="設定計時分鐘">
       <div class="minutes-row">
         <button class="small-button" id="minuteDown" type="button">-5</button>
         <output id="minutesValue">20 分鐘</output>
