@@ -429,7 +429,20 @@ setupVoiceControl();
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {
+    let isRefreshing = false;
+
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (isRefreshing) {
+        return;
+      }
+
+      isRefreshing = true;
+      window.location.reload();
+    });
+
+    navigator.serviceWorker.register("./sw.js").then((registration) => {
+      registration.update();
+    }).catch(() => {
       setVoiceStatus("離線模式暫時無法啟用");
     });
   });
